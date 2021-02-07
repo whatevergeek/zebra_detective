@@ -18,3 +18,11 @@ start:- length(Sol,3),                                  % There are 3 houses
     left([_,green,_,_],[_,_,dogs,basketball], Sol),     % The person with the Dogs lives directly to the right of the Green house.      
     Sol = [_,_,[german,_,_,_]],                         % The German lives in house three.
 	maplist(writeln, Sol). 
+
+
+% ?- start.
+% [brazilian,blue,fishes,football]
+% [australian,green,cats,soccer]
+% [german,red,dogs,basketball]
+% true ;
+% false.

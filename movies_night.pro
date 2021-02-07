@@ -38,3 +38,12 @@ start:- length(Sol,4),                                  % There are 4 boys
     somewhere_in_between([nicholas,_,_,_,_],[joshua,_,horror,_,_],[daniel,_,thriller,_,_], Sol),    % Nicholas is somewhere between Joshua and Daniel, in that order.
     Sol = [[_,green,_,_,_],_,_,_],                                                                  % At the first position is the boy wearing the Green shirt.
     maplist(writeln, Sol). 
+
+
+% ?- start.
+% [joshua,green,horror,popcorn,13]
+% [ryan,red,comedy,chips,12]
+% [nicholas,black,action,crackers,14]
+% [daniel,blue,thriller,cookies,11]
+% true ;
+% false.
