@@ -1,4 +1,3 @@
-consult('bibmm.pro').
 left(X,Y,L):- 	nextto(X,Y,L).
 
 start:- length(Sol,3),                                  % There are 3 houses
