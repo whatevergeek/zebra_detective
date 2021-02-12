@@ -1,19 +1,19 @@
 left(X, Y, L) :-
     nextto(X, Y, L).
 
-start :-
-    length(Sol, 3),                         % There are 3 houses
-    member([spanish, _], Sol),
-    member([italian, _], Sol),
-    member([_, red], Sol),
-    member([_, white], Sol),
-    member([norwegian, blue], Sol),         % The Norwegian lives in the Blue house. 
-    left([_, red], [spanish, _], Sol),      % The Spanish lives directly to the right of the Red house.    
-    Sol=[_, [italian, _], _],               % The Italian lives in house two.
-    write(Sol). 
+solve :-
+    length(Answer, 3),                         % There are 3 houses
+    member([spanish, _], Answer),
+    member([italian, _], Answer),
+    member([_, red], Answer),
+    member([_, white], Answer),
+    member([norwegian, blue], Answer),         % The Norwegian lives in the Blue house. 
+    left([_, red], [spanish, _], Answer),      % The Spanish lives directly to the right of the Red house.    
+    Answer=[_, [italian, _], _],               % The Italian lives in house two.
+    write(Answer). 
 
 
-% ?- start.
+% ?- solve.
 % [[norwegian,blue],[italian,red],[spanish,white]]
 % true ;
 % false.
